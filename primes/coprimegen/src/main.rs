@@ -14,11 +14,15 @@ fn main() {
 
     let vector = 2..max;
     let vector2 = 2..max;
-
-    let vector = vector.map(|x| vector2.filter(|y| x != *y && x % *y == 1)).
 }
 
-fn coprime(a:i64,b:i64) -> (a,b) {
+fn coprime(a:i64,b:i64) -> bool {
+
+    if a != b && a % b == 1 {
+        return true;
+    } else {
+        return false;
+    }
 
 }
 
